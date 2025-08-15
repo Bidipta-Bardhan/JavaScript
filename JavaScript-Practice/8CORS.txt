@@ -1,0 +1,5 @@
+CORS error usually happened when one domain (A) make api call to another domain (B)
+If the in other domain's (B) access-control-allow-origin if A is mentioned then only it will have access
+or the B's access-control-allow-origin is set to * (allow all)
+so while making a cross domain call a preflight call is made to check access if access is granted then only 
+actual api call take place.

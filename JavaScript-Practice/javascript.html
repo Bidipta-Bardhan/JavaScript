@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="1asyncawait.js" defer></script>
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>This is Bidipta's JavaScript Documentation</h1>
+    <h3 id="welcomeText"></h3>
+    <button  onclick="alert(this.tagName)">Click me to see my this</button>
+    <p>Example of event bubbling / capturing</p>
+    <div id="grandParent">
+        <div id="parent">
+            <div id="child">
+                <button id="eventBtn">Event Button</button>
+            </div>
+        </div>
+    </div>
+    <p>Event Delegation Example</p>
+    <ul id="categories">Categories
+        <li id="laptop">Laptops</li>
+        <li id="tv">TV</li>
+        <li id="mobile">Mobile</li>
+    </ul>
+    <div>
+        <p>Example of Debouncing</p>
+        <input type="text" onkeyup="debouncing()"/>
+    </div>
+     <div>
+        <p>Example of Throttling</p>
+        <input type="text" onkeyup="throttling(event)"/>
+    </div>
 </body>
 </html>
